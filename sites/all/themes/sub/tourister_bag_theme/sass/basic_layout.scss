@@ -1,0 +1,338 @@
+@import "variables";
+@import "fonts";
+
+body.html, html {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar.container {
+  background: transparent;
+  width: 100%;
+  max-width: 100%;
+  // padding: 0 50px;
+  border: none;
+  color: #fff;
+}
+
+#navbar.navbar-default {
+  .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    background: transparent;
+    color: #662cce
+  }
+
+  .navbar-nav > li > a:hover {
+    color: #662cce
+  }
+
+  .name.navbar-brand {
+    // color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.page-container.fixed-page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.page-container {
+  min-height: calc(100vh - 305px);
+  margin-bottom: 30px;
+}
+
+// Maintenance page
+.maintenance-page.in-maintenance {
+  width: 100%;
+  height: 100%;
+  font-family: OpenSans Light, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  .main-container {
+    margin: 0px;
+    padding: 0px;
+    .intro {
+      background-image: url(../images/background.jpg); /* Fullscreen Background Image */
+      background-size: cover;
+      background-position: center;
+      background-color: #2a2e39;
+      position: fixed;
+      z-index: 10;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      -webkit-transition: -webkit-transform 0.6s;
+      transition: transform 0.6s;
+      -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .intro-image {
+      background-color: rgba(0,0,0,0.7);
+      position: absolute;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 120%;
+      width: auto;
+      height: auto;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
+      transition: transform 0.6s, opacity 0.6s;
+      -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .center-content {
+      display: table;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      .intro-content {
+        display: table-cell;
+        font-size: 1.15em;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        min-height: 100%;
+        vertical-align: middle;
+        .logo {
+          width: 100%;
+          margin: -30px 0 25px;
+          h2.text-logo{
+            color: #ff9966;
+            font-family: BeonMedium;
+            font-weight: bold;
+            font-size: 3em;
+          }
+        }
+        .intro-title {
+          font-family: latobold;
+          font-size: 3em;
+          font-weight: normal;
+          margin: 15px 0;
+          text-transform: uppercase;
+        }
+        .obak { color: #ff9966 }
+      }
+    }
+  }
+}
+
+// FRONT pages
+body.front {
+  .page-container{
+    margin-bottom: 0px;
+    .main-container.container {
+      width: auto;
+      padding: 0px;
+       .slick-track, .slick-list {
+        	height: 100%;
+        }
+      .page-header {
+        display: none;
+      }
+      // Temporary hidden
+      #block-system-main {
+        display: none;
+      }
+      #block-views-view-banner-block-1 {
+        .view-id-view_banner {
+          // height: calc(100vh - 305px);
+          position: relative;
+          overflow: hidden;
+        }
+        .views-content.slick-initialized {
+          height: 100%;
+          margin-bottom: 0px;
+        }
+        @media screen and (max-width: 650px) {
+          .slick-slide img {
+            height: 180px;
+          }
+        }
+
+        .slick-dots {
+          background: white;
+          margin: 0px;
+          bottom: -25px;
+          li button:before {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.node-type-webform .node-webform {
+  header {
+    display: none;
+  }
+}
+
+.page-node-add-upload-cash-slip, .page-node-add-upload-cheque, .page-node-add-upload-neft-slip {
+  .page-node-add-upload-cash-slip-bank {
+    .field-name-field-order-id {
+      display: none;
+    }
+  }
+}
+
+.page-user-orders {
+  .breadcrumb {
+    display: none;
+  }
+  .page-header {
+    display: none;
+  }
+  .view-commerce-line-item-table.view-id-commerce_line_item_table {
+    .view-header {
+      margin-bottom: 30px;
+      box-shadow: 0 3px 9px rgba(0,0,0,0.07);
+      padding: 10px;
+
+      .invoice.details {
+        p {
+          display: inline-block;
+          width: 30%;
+
+          @media screen and (max-width: 767px) {
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+        }
+
+        .tax-invoice {
+          text-align: center;
+        }
+
+        .gst-number {
+          font-weight: bold;
+          font-size: 16px;
+
+          @media screen and (min-width: 768px) {
+            text-align: right;
+          }
+        }
+      }
+
+      .company-details {
+        text-align: center;
+        margin-bottom: 20px;
+        .company-title {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        .company-address, .company-email, .company-website, .company-number {
+          display: inline-block;
+          margin-left: 12px;
+        }
+      }
+
+      .user-details, .bank-details, .order-date-time {
+        display: inline-block;
+        width: 33%;
+        vertical-align: top;
+        @media screen and (max-width: 640px){
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+
+        .user-name {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+      .bank-details {
+        h5{
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+
+      .order-date-time {
+        h4 {
+          font-weight: bold;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .bill-summary {
+    font-weight: bold;
+    line-height: 3rem;
+  }
+
+  .company-name-sign {
+    text-align: right;
+
+    .name {
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+  }
+
+  .material-received-message, .computer-message {
+    text-align: center;
+  }
+}
+
+
+body.paytm-response-page {
+  .paytm-response {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+body.page-companies-marketing-info {
+  .view-companies-marketing-info {
+    .views-table {
+      font-size: 11px;
+      tr {
+        td, th {
+          padding: 5px 2px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+body.page-company-visit-data, body.page-show-bills, body.page-show-incoming-data, body.page-transactions-by-higher-authority, body.page-all-user-information {
+  .view-company-visit-data, .view-show-bills, .view-show-incoming-data, .view-transactions-bosses-to-agent, .view-user-information {
+    .views-table {
+      font-size: 12px;
+      tr {
+        td, th {
+          padding: 8px 0px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+.page-node-72 {
+  .page-header {
+    margin-top: 20px;
+  }
+
+  .region.region-content {
+    font-size: 16px;
+    line-height: 3rem;
+  }
+}

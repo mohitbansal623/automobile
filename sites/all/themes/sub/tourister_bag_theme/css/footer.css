@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'BeonMedium';
+  src: url("../fonts/beon-webfont.eot");
+  src: local("☺"), url("../fonts/beon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/beon-webfont.woff") format("woff"), url("../fonts/beon-webfont.ttf") format("truetype"), url("../fonts/beon-webfont.svg#BeonMedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/Lato-Bold-webfont.eot");
+  src: url("../fonts/Lato-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bold-webfont.woff2") format("woff2"), url("../fonts/Lato-Bold-webfont.woff") format("woff"), url("../fonts/Lato-Bold-webfont.ttf") format("truetype"), url("../fonts/Lato-Bold-webfont.svg#latobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/Lato-Light-webfont.eot");
+  src: url("../fonts/Lato-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Light-webfont.woff2") format("woff2"), url("../fonts/Lato-Light-webfont.woff") format("woff"), url("../fonts/Lato-Light-webfont.ttf") format("truetype"), url("../fonts/Lato-Light-webfont.svg#latolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/Lato-Regular-webfont.eot");
+  src: url("../fonts/Lato-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular-webfont.woff2") format("woff2"), url("../fonts/Lato-Regular-webfont.woff") format("woff"), url("../fonts/Lato-Regular-webfont.ttf") format("truetype"), url("../fonts/Lato-Regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sanslight';
+  src: url("../fonts/OpenSans-Light-webfont.eot");
+  src: url("../fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 4, ../sass/footer.scss */
+.site-footer {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 10px 0;
+}
+/* line 12, ../sass/footer.scss */
+.site-footer .footer {
+  margin-top: 0px;
+  border: 0;
+}
+/* line 15, ../sass/footer.scss */
+.site-footer .footer .block-title {
+  display: none;
+}
+/* line 19, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-left {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+}
+/* line 24, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+/* line 30, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-center {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+/* line 37, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-left h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin-bottom: 20px;
+}
+/* line 41, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-left h3 span {
+  color: #f38c58;
+}
+/* line 45, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-left .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 53, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+/* line 64, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+/* line 69, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+/* line 74, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+/* line 80, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-center p a {
+  color: #f38c58;
+  text-decoration: none;
+}
+/* line 87, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-right .footer-company-about {
+  line-height: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 93, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-right .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 100, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-right .footer-company-about a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+/* line 106, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-right .footer-icons {
+  margin-top: 25px;
+}
+/* line 108, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-right .footer-icons p {
+  display: inline-block;
+}
+/* line 111, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-right .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 130, ../sass/footer.scss */
+  .site-footer .footer-left {
+    width: 23% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 135, ../sass/footer.scss */
+  .site-footer .footer.container {
+    width: auto !important;
+  }
+}
+@media screen and (max-width: 880px) {
+  /* line 140, ../sass/footer.scss */
+  .site-footer .footer-left, .site-footer .footer-center, .site-footer .footer-right {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* line 147, ../sass/footer.scss */
+  .site-footer .footer-center div:last-child {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+  /* line 155, ../sass/footer.scss */
+  .site-footer .footer-center div:last-child {
+    margin-left: 14px;
+  }
+  /* line 158, ../sass/footer.scss */
+  .site-footer .footer-center div:nth-child(2) {
+    margin-left: -36px;
+  }
+  /* line 160, ../sass/footer.scss */
+  .site-footer .footer-center div:nth-child(2) p {
+    margin-left: 4px !important;
+  }
+  /* line 164, ../sass/footer.scss */
+  .site-footer .footer-center i {
+    margin: 10px 4px !important;
+  }
+  /* line 167, ../sass/footer.scss */
+  .site-footer .footer-center p {
+    font-size: 12px;
+  }
+}

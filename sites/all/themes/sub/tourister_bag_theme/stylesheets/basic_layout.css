@@ -1,0 +1,129 @@
+/* line 3, ../sass/basic_layout.scss */
+body.html, html {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 7, ../sass/basic_layout.scss */
+.navbar.container {
+  background: transparent;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 50px;
+  border: none;
+  color: #fff;
+}
+
+/* line 17, ../sass/basic_layout.scss */
+#navbar.navbar-default .navbar-nav > .active > a, #navbar.navbar-default .navbar-nav > .active > a:hover, #navbar.navbar-default .navbar-nav > .active > a:focus {
+  background: transparent;
+  color: #662cce;
+}
+/* line 22, ../sass/basic_layout.scss */
+#navbar.navbar-default .navbar-nav > li > a:hover {
+  color: #662cce;
+}
+/* line 26, ../sass/basic_layout.scss */
+#navbar.navbar-default .name.navbar-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 33, ../sass/basic_layout.scss */
+.page-container.fixed-page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* line 40, ../sass/basic_layout.scss */
+.page-container {
+  height: 995px;
+}
+
+/* line 45, ../sass/basic_layout.scss */
+.site-footer {
+  background: #000;
+}
+/* line 47, ../sass/basic_layout.scss */
+.site-footer .footer {
+  margin-top: 0;
+  border: 0;
+}
+/* line 51, ../sass/basic_layout.scss */
+.site-footer a {
+  color: #777;
+}
+/* line 54, ../sass/basic_layout.scss */
+.site-footer .timings {
+  text-align: right;
+}
+/* line 57, ../sass/basic_layout.scss */
+.site-footer .social {
+  text-align: center;
+}
+/* line 59, ../sass/basic_layout.scss */
+.site-footer .social .social-icons {
+  margin-bottom: 30px;
+}
+/* line 61, ../sass/basic_layout.scss */
+.site-footer .social .social-icons a {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  width: 31px;
+  height: 31px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+/* line 68, ../sass/basic_layout.scss */
+.site-footer .social .social-icons a:hover {
+  background: white;
+}
+/* line 70, ../sass/basic_layout.scss */
+.site-footer .social .social-icons a:hover i {
+  color: #000;
+}
+/* line 74, ../sass/basic_layout.scss */
+.site-footer .social .social-icons a:last-child {
+  margin: 0;
+}
+/* line 77, ../sass/basic_layout.scss */
+.site-footer .social .social-icons a i {
+  color: #fff;
+}
+/* line 83, ../sass/basic_layout.scss */
+.site-footer .email {
+  margin-bottom: 10px;
+}
+/* line 86, ../sass/basic_layout.scss */
+.site-footer .footer-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 91, ../sass/basic_layout.scss */
+.site-footer .location, .site-footer .social, .site-footer .timings {
+  width: 33.33%;
+}
+@media (max-width: 600px) {
+  /* line 91, ../sass/basic_layout.scss */
+  .site-footer .location, .site-footer .social, .site-footer .timings {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* line 97, ../sass/basic_layout.scss */
+  .site-footer .location .footer-title, .site-footer .social .footer-title, .site-footer .timings .footer-title {
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  /* line 101, ../sass/basic_layout.scss */
+  .site-footer .location .social-icons, .site-footer .location .email, .site-footer .location .phone, .site-footer .social .social-icons, .site-footer .social .email, .site-footer .social .phone, .site-footer .timings .social-icons, .site-footer .timings .email, .site-footer .timings .phone {
+    margin-bottom: 5px;
+  }
+  /* line 104, ../sass/basic_layout.scss */
+  .site-footer .location p, .site-footer .social p, .site-footer .timings p {
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+}

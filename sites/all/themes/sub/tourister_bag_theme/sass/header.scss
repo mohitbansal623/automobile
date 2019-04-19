@@ -1,0 +1,80 @@
+@import "fonts";
+
+
+header#navbar.navbar.container {
+  font: 14px sans-serif;
+  background: #292c2f;
+  margin: 0;
+  max-width: 100%;
+  border-radius: 0;
+  .navbar-header {
+    @media screen and (max-width: 767px) {
+      margin: 10px 0px;
+    }
+
+    .logo.navbar-btn {
+      display: inline-block;
+
+      img {
+        width : 60px;
+      }
+    }
+
+    h3 {
+      margin: 0;
+      color: #ffffff;
+      font: normal 36px 'Cookie', cursive;
+      display: inline-block;
+      margin-top: 12px;
+
+      a {
+        font-size: 32px;
+        color: white;
+        text-transform: capitalize;
+        font-weight: normal;
+
+        @media screen and (max-width: 767px) {
+          font-size: 40px;
+        }
+
+        span {
+          color: #f38c58;
+        }
+      }
+    }
+
+  }
+  .navbar-collapse {
+    nav{
+      @media screen and (min-width: 768px) {
+        float: right;
+        margin-top: 12px;
+      }
+    }
+    ul.navbar-nav {
+      a {
+        color: #fff;
+        &.active {
+          color: #f38c58;
+        }
+        &:hover {
+          color: #f38c58;
+        }
+      }
+    }
+
+    ul.dropdown-menu {
+      a {
+        @media screen and (min-width: 768px) {
+          color: #111;
+        }
+      }
+      &.active {
+        color: #fff;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
