@@ -2214,8 +2214,6 @@ function user_login_authenticate_validate($form, &$form_state) {
  * be the last one.
  */
 function user_login_final_validate($form, &$form_state) {
-  dpm($form_state);
-  watchdog('user11111', print_r($form_state, TRUE));
   if (empty($form_state['uid'])) {
     // Always register an IP-based failed login event.
     flood_register_event('failed_login_attempt_ip', variable_get('user_failed_login_ip_window', 3600));
