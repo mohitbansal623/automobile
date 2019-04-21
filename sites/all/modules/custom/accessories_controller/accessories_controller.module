@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_init().
+ */
+function accessories_controller_init() {
+
+  global $user;
+  $path = drupal_get_path_alias();
+  if ($path == 'admin/commerce/products' && in_array('wholesaler', $user->roles)) {
+  	drupal_goto('my-products');
+
+  }
+  } 	
