@@ -16,7 +16,12 @@ function accessories_controller_init() {
   	dpm($account);
 
   	if (isset($account->field_terms_conditions_statuss['und'][0]['value']) && $account->field_terms_conditions_statuss['und'][0]['value'] == 0) {
-
+         dpm("mohit");
+         dpm(drupal_get_path('module', 'accessories_controller'));
+         dpm(drupal_get_path('module', 'accessories_controller') . '/js/parts.js');
+          drupal_add_js(drupal_get_path('module', 'accessories_controller') . '/js/parts.js');
+          drupal_add_js(array('show_popup' => array('flag' => 1)), array('type' => 'setting'));
+          dpm("bansal");
   	}
 
 

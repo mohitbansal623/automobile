@@ -1,5 +1,6 @@
 (function($) {
   $(document).ready(function(){
+     $("#block-block-1").hide();
 
     // $('#block-views-view-banner-block-1 .view-content').slick({
     //   arrows: false,
