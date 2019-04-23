@@ -9,6 +9,43 @@ function accessories_controller_init() {
   $path = drupal_get_path_alias();
   if ($path == 'admin/commerce/products' && in_array('wholesaler', $user->roles)) {
   	drupal_goto('my-products');
+  }
+  }
+
+  function accessories_controller_user_login(&$edit, $account) {
+  	dpm($account);
+
+  	if (isset($account->field_terms_conditions_statuss['und'][0]['value']) && $account->field_terms_conditions_statuss['und'][0]['value'] == 0) {
+
+  	}
+
 
   }
-  } 	
+
+  /**
+ * Implements hook_menu().
+ */
+function accessories_controller_menu() {
+  $items = array();
+
+  $items['accept'] = array(
+    'title' => 'Set 1 status to Term and conditions',
+    'description' => 'Set 1 status to Term and conditions',
+    'page callback' => 'accept_terms_and_conditions',
+    'access callback' => TRUE,
+  );
+
+
+return $items;
+}
+
+
+function accept_terms_and_conditions() {
+	global $user;
+	$user_info = user_load($user->uid);
+	$user_info->field_terms_conditions_statuss['und'][0]['value'] = 1;
+	user_save($user_info);
+}
+
+
+
