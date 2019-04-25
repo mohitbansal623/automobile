@@ -36,59 +36,48 @@
 }
 /* line 4, ../sass/footer.scss */
 .site-footer {
-  background-color: #292c2f;
+  background-color: #0a364a;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font: bold 16px sans-serif;
   padding: 10px 0;
+  color: #fff;
 }
-/* line 12, ../sass/footer.scss */
+/* line 13, ../sass/footer.scss */
 .site-footer .footer {
   margin-top: 0px;
   border: 0;
 }
-/* line 15, ../sass/footer.scss */
+/* line 16, ../sass/footer.scss */
 .site-footer .footer .block-title {
   display: none;
 }
-/* line 19, ../sass/footer.scss */
-.site-footer .footer .footer-distributed .footer-left {
+/* line 20, ../sass/footer.scss */
+.site-footer .footer .footer-distributed .footer-left, .site-footer .footer .footer-distributed .footer-center, .site-footer .footer .footer-distributed .footer-right {
   display: inline-block;
   vertical-align: top;
-  width: 20%;
+  width: 32%;
 }
-/* line 24, ../sass/footer.scss */
-.site-footer .footer .footer-distributed .footer-right {
-  display: inline-block;
-  vertical-align: top;
-  width: 25%;
-}
-/* line 30, ../sass/footer.scss */
-.site-footer .footer .footer-distributed .footer-center {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-}
-/* line 37, ../sass/footer.scss */
+/* line 26, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-left h3 {
   color: #ffffff;
   font: normal 36px 'Cookie', cursive;
   margin-bottom: 20px;
 }
-/* line 41, ../sass/footer.scss */
+/* line 30, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-left h3 span {
   color: #f38c58;
 }
-/* line 45, ../sass/footer.scss */
+/* line 34, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-left .footer-company-name {
   color: #8f9296;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
 }
-/* line 53, ../sass/footer.scss */
+/* line 42, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-center i {
   background-color: #33383b;
   color: #ffffff;
@@ -101,60 +90,54 @@
   margin: 10px 15px;
   vertical-align: middle;
 }
-/* line 64, ../sass/footer.scss */
+/* line 53, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-center i.fa-envelope {
   font-size: 17px;
   line-height: 38px;
 }
-/* line 69, ../sass/footer.scss */
+/* line 58, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-center p {
   display: inline-block;
   color: #ffffff;
   vertical-align: middle;
   margin: 0;
 }
-/* line 74, ../sass/footer.scss */
+/* line 63, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-center p span {
   display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
 }
-/* line 80, ../sass/footer.scss */
+/* line 69, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-center p a {
   color: #f38c58;
   text-decoration: none;
 }
-/* line 87, ../sass/footer.scss */
+/* line 76, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-right .footer-company-about {
   line-height: 20px;
-  color: white;
-  font-size: 15px;
+  color: #92999f;
+  font-size: 13px;
   font-weight: normal;
   margin: 0;
 }
-/* line 93, ../sass/footer.scss */
+/* line 82, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-right .footer-company-about span {
   display: block;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
 }
-/* line 100, ../sass/footer.scss */
-.site-footer .footer .footer-distributed .footer-right .footer-company-about a {
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
-}
-/* line 106, ../sass/footer.scss */
+/* line 89, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-right .footer-icons {
   margin-top: 25px;
 }
-/* line 108, ../sass/footer.scss */
+/* line 91, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-right .footer-icons p {
   display: inline-block;
 }
-/* line 111, ../sass/footer.scss */
+/* line 94, ../sass/footer.scss */
 .site-footer .footer .footer-distributed .footer-right .footer-icons a {
   display: inline-block;
   width: 35px;
@@ -170,48 +153,48 @@
   margin-bottom: 5px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 130, ../sass/footer.scss */
+  /* line 113, ../sass/footer.scss */
   .site-footer .footer-left {
     width: 23% !important;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 135, ../sass/footer.scss */
+  /* line 118, ../sass/footer.scss */
   .site-footer .footer.container {
     width: auto !important;
   }
 }
 @media screen and (max-width: 880px) {
-  /* line 140, ../sass/footer.scss */
+  /* line 123, ../sass/footer.scss */
   .site-footer .footer-left, .site-footer .footer-center, .site-footer .footer-right {
     display: block !important;
     width: 100% !important;
     margin-bottom: 20px;
     text-align: center;
   }
-  /* line 147, ../sass/footer.scss */
+  /* line 130, ../sass/footer.scss */
   .site-footer .footer-center div:last-child {
     margin-left: 60px;
   }
 }
 @media screen and (max-width: 375px) {
-  /* line 155, ../sass/footer.scss */
+  /* line 138, ../sass/footer.scss */
   .site-footer .footer-center div:last-child {
     margin-left: 14px;
   }
-  /* line 158, ../sass/footer.scss */
+  /* line 141, ../sass/footer.scss */
   .site-footer .footer-center div:nth-child(2) {
     margin-left: -36px;
   }
-  /* line 160, ../sass/footer.scss */
+  /* line 143, ../sass/footer.scss */
   .site-footer .footer-center div:nth-child(2) p {
     margin-left: 4px !important;
   }
-  /* line 164, ../sass/footer.scss */
+  /* line 147, ../sass/footer.scss */
   .site-footer .footer-center i {
     margin: 10px 4px !important;
   }
-  /* line 167, ../sass/footer.scss */
+  /* line 150, ../sass/footer.scss */
   .site-footer .footer-center p {
     font-size: 12px;
   }

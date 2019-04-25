@@ -3,7 +3,7 @@
 
 header#navbar.navbar.container {
   font: 14px sans-serif;
-  background: #292c2f;
+  background: #0a364a;
   margin: 0;
   max-width: 100%;
   border-radius: 0;
@@ -29,7 +29,8 @@ header#navbar.navbar.container {
 
       a {
         font-size: 32px;
-        color: white;
+        // color: #417a9f;
+        color: #fff;
         text-transform: capitalize;
         font-weight: normal;
 
@@ -53,12 +54,30 @@ header#navbar.navbar.container {
     }
     ul.navbar-nav {
       a {
+        // color: #417a9f;
         color: #fff;
-        &.active {
-          color: #f38c58;
+        position: relative;
+        padding-bottom: 5px;
+        &::after {
+          content: '';
+          height: 3px;
+          left: 15px;
+          width: 0;
+          background: #52b1e7;
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          position: absolute;
+          bottom: 0;
         }
-        &:hover {
-          color: #f38c58;
+        &.active::after {
+          // color: #f38c58;
+          width: 60%;
+
+        }
+        &:hover::after {
+          // color: #f38c58;
+          // text-decoration: underline;
+          width: 60%;
         }
       }
     }

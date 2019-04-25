@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the feature_all_accessories_view feature.
+ */
+
+include_once 'feature_all_accessories_view.features.inc';

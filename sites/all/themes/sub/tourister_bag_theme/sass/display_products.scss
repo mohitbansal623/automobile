@@ -74,24 +74,74 @@
 }
 
 
-body.page-bags {
+body.front {
   .main-container {
+    // background-color: #0a364a;
     h1.page-header {
       border-bottom: none;
       margin-top: 20px;
       font-weight: bold;
       text-align: center;
     }
+    h2.block-title {
+      color: black;
+      text-align: center;
+      font-size: 37px;
+    }
   }
-  .view-bags.view-id-bags {
+  .view-accessories.view-id-accessories {
+    .view-header{
+      margin-top: 30px;
+      h4 {
+        color: #346B8A;
+      }
+    }
     .view-filters {
       margin-bottom: 40px;
+      select {
+        width: 200px;
+      }
+      .views-exposed-form .views-exposed-widget .btn {
+        margin-top: 1.4em;
+        padding: 6px 40px;
+        background-color: #346B8A;
+        border-color: #346B8A;
+      }
     }
     .view-content {
-      .views-field-field-image {
-        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.07);
+      margin-bottom: 100px;
+      .item {
+        .thumbnail {
+          background: #fff;
+          border-radius: 5px;
+          overflow: hidden;
+          padding: 10px;
+          margin: 0 0 15px;
+          text-align: left;
+          .views-field-field-accessories-image .img {
+            border-radius: 6px;
+          }
+          .views-field-title {
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.4;
+            color: #326b8a;
+          }
+          .views-field-add-to-cart-form {
+            .btn {
+              background-color: #346B8A;
+              border-color: #346B8A;
+            }
+          }
+        }
+      }
+      .views-field-field-accessories-image {
+        // box-shadow: 0 3px 9px rgba(0, 0, 0, 0.07);
         a {
           padding: 10px;
+        }
+        img {
+          display: inline;
         }
       }
       .views-field-title {
@@ -118,7 +168,7 @@ body.page-cart {
     .view-content {
       .views-table {
         tbody {
-          tr.view-bags {
+          tr.view-accessories {
             // price
             td.views-field-commerce-unit-price {
               .commerce-price-formatted-components {
@@ -167,7 +217,7 @@ body.page-checkout {
     .view-content {
       .views-table {
         tbody {
-          tr.view-bags {
+          tr.view-accessories {
             // price
             td.views-field-commerce-unit-price, td.views-field-commerce-total {
               .commerce-price-formatted-components {
