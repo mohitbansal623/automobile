@@ -1,0 +1,9 @@
+name = feature_all_accessories_view
+core = 7.x
+package = Features
+dependencies[] = better_exposed_filters
+dependencies[] = views
+dependencies[] = views_bootstrap
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = accessories
