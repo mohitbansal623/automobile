@@ -37,7 +37,7 @@
 /* line 4, ../sass/header.scss */
 header#navbar.navbar.container {
   font: 14px sans-serif;
-  background: #292c2f;
+  background: #0a364a;
   margin: 0;
   max-width: 100%;
   border-radius: 0;
@@ -52,7 +52,10 @@ header#navbar.navbar.container {
 header#navbar.navbar.container .navbar-header .logo.navbar-btn {
   display: inline-block;
 }
-
+/* line 18, ../sass/header.scss */
+header#navbar.navbar.container .navbar-header .logo.navbar-btn img {
+  width: 60px;
+}
 /* line 23, ../sass/header.scss */
 header#navbar.navbar.container .navbar-header h3 {
   margin: 0;
@@ -64,7 +67,7 @@ header#navbar.navbar.container .navbar-header h3 {
 /* line 30, ../sass/header.scss */
 header#navbar.navbar.container .navbar-header h3 a {
   font-size: 32px;
-  color: white;
+  color: #fff;
   text-transform: capitalize;
   font-weight: normal;
 }
@@ -74,40 +77,54 @@ header#navbar.navbar.container .navbar-header h3 a {
     font-size: 40px;
   }
 }
-/* line 40, ../sass/header.scss */
+/* line 41, ../sass/header.scss */
 header#navbar.navbar.container .navbar-header h3 a span {
   color: #f38c58;
 }
 @media screen and (min-width: 768px) {
-  /* line 48, ../sass/header.scss */
+  /* line 49, ../sass/header.scss */
   header#navbar.navbar.container .navbar-collapse nav {
     float: right;
     margin-top: 12px;
   }
 }
-/* line 55, ../sass/header.scss */
+/* line 56, ../sass/header.scss */
 header#navbar.navbar.container .navbar-collapse ul.navbar-nav a {
   color: #fff;
+  position: relative;
+  padding-bottom: 5px;
 }
-/* line 57, ../sass/header.scss */
-header#navbar.navbar.container .navbar-collapse ul.navbar-nav a.active {
-  color: #f38c58;
+/* line 61, ../sass/header.scss */
+header#navbar.navbar.container .navbar-collapse ul.navbar-nav a::after {
+  content: '';
+  height: 3px;
+  left: 15px;
+  width: 0;
+  background: #52b1e7;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 0;
 }
-/* line 60, ../sass/header.scss */
-header#navbar.navbar.container .navbar-collapse ul.navbar-nav a:hover {
-  color: #f38c58;
+/* line 72, ../sass/header.scss */
+header#navbar.navbar.container .navbar-collapse ul.navbar-nav a.active::after {
+  width: 60%;
+}
+/* line 77, ../sass/header.scss */
+header#navbar.navbar.container .navbar-collapse ul.navbar-nav a:hover::after {
+  width: 60%;
 }
 @media screen and (min-width: 768px) {
-  /* line 67, ../sass/header.scss */
+  /* line 86, ../sass/header.scss */
   header#navbar.navbar.container .navbar-collapse ul.dropdown-menu a {
     color: #111;
   }
 }
-/* line 72, ../sass/header.scss */
+/* line 91, ../sass/header.scss */
 header#navbar.navbar.container .navbar-collapse ul.dropdown-menu.active {
   color: #fff;
 }
-/* line 75, ../sass/header.scss */
+/* line 94, ../sass/header.scss */
 header#navbar.navbar.container .navbar-collapse ul.dropdown-menu:hover {
   color: #fff;
 }

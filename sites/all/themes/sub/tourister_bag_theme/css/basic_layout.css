@@ -208,258 +208,166 @@ body.front .page-container .main-container.container #block-views-view-banner-bl
   }
 }
 /* line 160, ../sass/basic_layout.scss */
-body.front .page-container .main-container.container #block-views-view-banner-block-1 .slick-slider {
-  margin-bottom: 0;
+body.front .page-container .main-container.container #block-views-view-banner-block-1 .slick-dots {
+  background: white;
+  margin: 0px;
+  bottom: -25px;
 }
-/* line 162, ../sass/basic_layout.scss */
-body.front .page-container .main-container.container #block-views-view-banner-block-1 .slick-slider .slick-dots {
-  bottom: 5px;
-  margin: 0;
-}
-/* line 166, ../sass/basic_layout.scss */
-body.front .page-container .main-container.container #block-views-view-banner-block-1 .slick-slider .slick-dots li button:before {
-  font-size: 13px;
-  color: #fff;
-}
-/* line 171, ../sass/basic_layout.scss */
-body.front .page-container .main-container.container #block-views-view-banner-block-1 .slick-slider .slick-dots li.slick-active button:before {
-  color: #fff;
+/* line 164, ../sass/basic_layout.scss */
+body.front .page-container .main-container.container #block-views-view-banner-block-1 .slick-dots li button:before {
+  font-size: 10px;
 }
 
-/* line 182, ../sass/basic_layout.scss */
+/* line 174, ../sass/basic_layout.scss */
 .node-type-webform .node-webform header {
   display: none;
 }
 
-/* line 189, ../sass/basic_layout.scss */
+/* line 181, ../sass/basic_layout.scss */
 .page-node-add-upload-cash-slip .page-node-add-upload-cash-slip-bank .field-name-field-order-id, .page-node-add-upload-cheque .page-node-add-upload-cash-slip-bank .field-name-field-order-id, .page-node-add-upload-neft-slip .page-node-add-upload-cash-slip-bank .field-name-field-order-id {
   display: none;
 }
 
-/* line 196, ../sass/basic_layout.scss */
-.page-user-orders .page-container {
-  margin-bottom: 0px;
-}
-/* line 200, ../sass/basic_layout.scss */
-.page-user-orders .breadcrumb, .page-user-orders .action-links {
+/* line 188, ../sass/basic_layout.scss */
+.page-user-orders .breadcrumb {
   display: none;
 }
-/* line 204, ../sass/basic_layout.scss */
+/* line 191, ../sass/basic_layout.scss */
 .page-user-orders .page-header {
   display: none;
 }
-/* line 209, ../sass/basic_layout.scss */
-.page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table p {
-  margin: 0 !important;
-}
-/* line 213, ../sass/basic_layout.scss */
+/* line 195, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header {
-  margin-bottom: 2px;
+  margin-bottom: 30px;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.07);
   padding: 10px;
 }
-/* line 219, ../sass/basic_layout.scss */
+/* line 201, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .invoice.details p {
   display: inline-block;
-  width: 33%;
+  width: 30%;
 }
 @media screen and (max-width: 767px) {
-  /* line 219, ../sass/basic_layout.scss */
+  /* line 201, ../sass/basic_layout.scss */
   .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .invoice.details p {
     display: block;
     text-align: center;
     width: 100%;
   }
 }
-/* line 230, ../sass/basic_layout.scss */
+/* line 212, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .invoice.details .tax-invoice {
   text-align: center;
 }
-/* line 234, ../sass/basic_layout.scss */
+/* line 216, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .invoice.details .gst-number {
   font-weight: bold;
   font-size: 16px;
 }
 @media screen and (min-width: 768px) {
-  /* line 234, ../sass/basic_layout.scss */
+  /* line 216, ../sass/basic_layout.scss */
   .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .invoice.details .gst-number {
     text-align: right;
   }
 }
-/* line 244, ../sass/basic_layout.scss */
+/* line 226, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .company-details {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 247, ../sass/basic_layout.scss */
+/* line 229, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .company-details .company-title {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 251, ../sass/basic_layout.scss */
+/* line 233, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .company-details .company-address, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .company-details .company-email, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .company-details .company-website, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .company-details .company-number {
   display: inline-block;
   margin-left: 12px;
 }
-/* line 257, ../sass/basic_layout.scss */
-.page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .user-details, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .bank-details, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .field-name-commerce-customer-billing {
+/* line 239, ../sass/basic_layout.scss */
+.page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .user-details, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .bank-details, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time {
   display: inline-block;
   width: 33%;
   vertical-align: top;
 }
 @media screen and (max-width: 640px) {
-  /* line 257, ../sass/basic_layout.scss */
-  .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .user-details, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .bank-details, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .field-name-commerce-customer-billing {
+  /* line 239, ../sass/basic_layout.scss */
+  .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .user-details, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .bank-details, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time {
     display: block;
     width: 100%;
     text-align: center;
   }
 }
-/* line 267, ../sass/basic_layout.scss */
-.page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .user-details .user-name, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .bank-details .user-name, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time .user-name, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .field-name-commerce-customer-billing .user-name {
+/* line 249, ../sass/basic_layout.scss */
+.page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .user-details .user-name, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .bank-details .user-name, .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time .user-name {
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 0px;
 }
-/* line 274, ../sass/basic_layout.scss */
+/* line 255, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .bank-details h5 {
   font-weight: bold;
   font-size: 18px;
-  margin: 0px;
 }
-/* line 282, ../sass/basic_layout.scss */
-.page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time h5 {
+/* line 262, ../sass/basic_layout.scss */
+.page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time h4 {
   font-weight: bold;
-  margin: 0px;
 }
-/* line 286, ../sass/basic_layout.scss */
+/* line 265, ../sass/basic_layout.scss */
 .page-user-orders .view-commerce-line-item-table.view-id-commerce_line_item_table .view-header .order-date-time p {
-  display: inline-block;
+  font-size: 16px;
 }
-/* line 293, ../sass/basic_layout.scss */
+/* line 272, ../sass/basic_layout.scss */
 .page-user-orders .bill-summary {
   font-weight: bold;
   line-height: 3rem;
 }
-/* line 298, ../sass/basic_layout.scss */
-.page-user-orders .bank-details {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+/* line 277, ../sass/basic_layout.scss */
+.page-user-orders .company-name-sign {
+  text-align: right;
 }
-
-/* line 306, ../sass/basic_layout.scss */
+/* line 280, ../sass/basic_layout.scss */
 .page-user-orders .company-name-sign .name {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
-/* line 312, ../sass/basic_layout.scss */
+/* line 286, ../sass/basic_layout.scss */
 .page-user-orders .material-received-message, .page-user-orders .computer-message {
   text-align: center;
 }
 
-/* line 319, ../sass/basic_layout.scss */
+/* line 293, ../sass/basic_layout.scss */
 body.paytm-response-page .paytm-response {
   text-align: center;
   font-size: 14px;
 }
 
-/* line 327, ../sass/basic_layout.scss */
+/* line 301, ../sass/basic_layout.scss */
 body.page-companies-marketing-info .view-companies-marketing-info .views-table {
   font-size: 11px;
 }
-/* line 330, ../sass/basic_layout.scss */
+/* line 304, ../sass/basic_layout.scss */
 body.page-companies-marketing-info .view-companies-marketing-info .views-table tr td, body.page-companies-marketing-info .view-companies-marketing-info .views-table tr th {
   padding: 5px 2px;
   text-align: center;
 }
 
-/* line 342, ../sass/basic_layout.scss */
+/* line 316, ../sass/basic_layout.scss */
 body.page-company-visit-data .view-company-visit-data .views-table, body.page-company-visit-data .view-show-bills .views-table, body.page-company-visit-data .view-show-incoming-data .views-table, body.page-company-visit-data .view-transactions-bosses-to-agent .views-table, body.page-company-visit-data .view-user-information .views-table, body.page-show-bills .view-company-visit-data .views-table, body.page-show-bills .view-show-bills .views-table, body.page-show-bills .view-show-incoming-data .views-table, body.page-show-bills .view-transactions-bosses-to-agent .views-table, body.page-show-bills .view-user-information .views-table, body.page-show-incoming-data .view-company-visit-data .views-table, body.page-show-incoming-data .view-show-bills .views-table, body.page-show-incoming-data .view-show-incoming-data .views-table, body.page-show-incoming-data .view-transactions-bosses-to-agent .views-table, body.page-show-incoming-data .view-user-information .views-table, body.page-transactions-by-higher-authority .view-company-visit-data .views-table, body.page-transactions-by-higher-authority .view-show-bills .views-table, body.page-transactions-by-higher-authority .view-show-incoming-data .views-table, body.page-transactions-by-higher-authority .view-transactions-bosses-to-agent .views-table, body.page-transactions-by-higher-authority .view-user-information .views-table, body.page-all-user-information .view-company-visit-data .views-table, body.page-all-user-information .view-show-bills .views-table, body.page-all-user-information .view-show-incoming-data .views-table, body.page-all-user-information .view-transactions-bosses-to-agent .views-table, body.page-all-user-information .view-user-information .views-table {
   font-size: 12px;
 }
-/* line 345, ../sass/basic_layout.scss */
+/* line 319, ../sass/basic_layout.scss */
 body.page-company-visit-data .view-company-visit-data .views-table tr td, body.page-company-visit-data .view-company-visit-data .views-table tr th, body.page-company-visit-data .view-show-bills .views-table tr td, body.page-company-visit-data .view-show-bills .views-table tr th, body.page-company-visit-data .view-show-incoming-data .views-table tr td, body.page-company-visit-data .view-show-incoming-data .views-table tr th, body.page-company-visit-data .view-transactions-bosses-to-agent .views-table tr td, body.page-company-visit-data .view-transactions-bosses-to-agent .views-table tr th, body.page-company-visit-data .view-user-information .views-table tr td, body.page-company-visit-data .view-user-information .views-table tr th, body.page-show-bills .view-company-visit-data .views-table tr td, body.page-show-bills .view-company-visit-data .views-table tr th, body.page-show-bills .view-show-bills .views-table tr td, body.page-show-bills .view-show-bills .views-table tr th, body.page-show-bills .view-show-incoming-data .views-table tr td, body.page-show-bills .view-show-incoming-data .views-table tr th, body.page-show-bills .view-transactions-bosses-to-agent .views-table tr td, body.page-show-bills .view-transactions-bosses-to-agent .views-table tr th, body.page-show-bills .view-user-information .views-table tr td, body.page-show-bills .view-user-information .views-table tr th, body.page-show-incoming-data .view-company-visit-data .views-table tr td, body.page-show-incoming-data .view-company-visit-data .views-table tr th, body.page-show-incoming-data .view-show-bills .views-table tr td, body.page-show-incoming-data .view-show-bills .views-table tr th, body.page-show-incoming-data .view-show-incoming-data .views-table tr td, body.page-show-incoming-data .view-show-incoming-data .views-table tr th, body.page-show-incoming-data .view-transactions-bosses-to-agent .views-table tr td, body.page-show-incoming-data .view-transactions-bosses-to-agent .views-table tr th, body.page-show-incoming-data .view-user-information .views-table tr td, body.page-show-incoming-data .view-user-information .views-table tr th, body.page-transactions-by-higher-authority .view-company-visit-data .views-table tr td, body.page-transactions-by-higher-authority .view-company-visit-data .views-table tr th, body.page-transactions-by-higher-authority .view-show-bills .views-table tr td, body.page-transactions-by-higher-authority .view-show-bills .views-table tr th, body.page-transactions-by-higher-authority .view-show-incoming-data .views-table tr td, body.page-transactions-by-higher-authority .view-show-incoming-data .views-table tr th, body.page-transactions-by-higher-authority .view-transactions-bosses-to-agent .views-table tr td, body.page-transactions-by-higher-authority .view-transactions-bosses-to-agent .views-table tr th, body.page-transactions-by-higher-authority .view-user-information .views-table tr td, body.page-transactions-by-higher-authority .view-user-information .views-table tr th, body.page-all-user-information .view-company-visit-data .views-table tr td, body.page-all-user-information .view-company-visit-data .views-table tr th, body.page-all-user-information .view-show-bills .views-table tr td, body.page-all-user-information .view-show-bills .views-table tr th, body.page-all-user-information .view-show-incoming-data .views-table tr td, body.page-all-user-information .view-show-incoming-data .views-table tr th, body.page-all-user-information .view-transactions-bosses-to-agent .views-table tr td, body.page-all-user-information .view-transactions-bosses-to-agent .views-table tr th, body.page-all-user-information .view-user-information .views-table tr td, body.page-all-user-information .view-user-information .views-table tr th {
   padding: 8px 0px;
   text-align: center;
 }
 
-/* line 356, ../sass/basic_layout.scss */
+/* line 330, ../sass/basic_layout.scss */
 .page-node-72 .page-header {
   margin-top: 20px;
 }
-/* line 360, ../sass/basic_layout.scss */
+/* line 334, ../sass/basic_layout.scss */
 .page-node-72 .region.region-content {
   font-size: 16px;
   line-height: 3rem;
-}
-
-/* line 367, ../sass/basic_layout.scss */
-
-
-/* line 372, ../sass/basic_layout.scss */
-.page-bags .view-id-bags.view-display-id-page .view-content .agent_role:nth-child(1) {
-  display: none;
-}
-
-.page-user-orders .field-name-commerce-customer-billing  .field-name-field-select-bill-date {
-    display:none;
-}
-
-.page-user-orders .company-name-sign .name {
-      text-align: right;
-}
-
-.page-user-orders .company-name-sign .signature {
-      text-align: center;
-      padding-left: 65%;
-}
-
-.page-user-orders .field-name-field-create-order-date {
-  display:none;    
-}
-
-.page-user-orders .field-name-commerce-discounts {
-    display:none;
-}
-
-.page-user-orders .addressfield-container-inline.name-block {
-    display:inline-block;
-}
-
-.page-user-orders .street-block {
-    display: inline-block;
-    vertical-align: top;
-    
-}
-
-.page-user-orders  .country {
-    display:none;
-}
-
-.page-user-orders  .locality-block {
-    
-}
-
-.page-user-orders .field-name-field-phone-no .field-label, .page-user-orders .field-name-field-phone-no .field-items {
-    display:inline-block;
-    
-}
-
-.page-user-orders .total-amount-with-GST {
-    display:inline-block;
-}
-
-.page-user-orders .narration-section h5 {
-    display:inline-block;
-    font-weight: bold;
-}
-
-.page-user-orders .narration-section p{
-    display:inline-block;
-    padding-left: 5px;
-}
-
-.page-user-orders .total-taxes-type {
-    display:inline-block;
-    padding-left: 30px;
 }
