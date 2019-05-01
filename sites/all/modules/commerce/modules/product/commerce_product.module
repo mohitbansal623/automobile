@@ -493,6 +493,16 @@ function commerce_product_new($type = '') {
  *   SAVED_NEW or SAVED_UPDATED depending on the operation performed.
  */
 function commerce_product_save($product) {
+  
+  global $user;
+  if (in_array('wholesaler', $user->roles)) {
+    // Adding 25% of the price filled by Wholesaler
+    $price = (25 * $product->field_product_price['und'][0]['amount']) / 100;
+    $product->commerce_price['und'][0]['amount'] = $product->field_product_price['und'][0]['amount'] +$price;
+
+    $product->commerce_price['und'][0]['currency_code'] = $product->field_product_price['und'][0]['currency_code'];
+  }
+
   return entity_get_controller('commerce_product')->save($product);
 }
 

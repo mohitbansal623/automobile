@@ -13,15 +13,9 @@ function accessories_controller_init() {
   }
 
   function accessories_controller_user_login(&$edit, $account) {
-  	dpm($account);
-
   	if (isset($account->field_terms_conditions_statuss['und'][0]['value']) && $account->field_terms_conditions_statuss['und'][0]['value'] == 0) {
-         dpm("mohit");
-         dpm(drupal_get_path('module', 'accessories_controller'));
-         dpm(drupal_get_path('module', 'accessories_controller') . '/js/parts.js');
           drupal_add_js(drupal_get_path('module', 'accessories_controller') . '/js/parts.js');
           drupal_add_js(array('show_popup' => array('flag' => 1)), array('type' => 'setting'));
-          dpm("bansal");
   	}
 
 
@@ -50,6 +44,21 @@ function accept_terms_and_conditions() {
 	$user_info = user_load($user->uid);
 	$user_info->field_terms_conditions_statuss['und'][0]['value'] = 1;
 	user_save($user_info);
+}
+
+
+function accessories_controller_form_alter(&$form, &$form_state, $form_id) {
+  // Making default price field non mandatory for wholesaler.
+
+  global $user;
+  if ($form_id == 'commerce_product_ui_product_form') {
+    $form['commerce_price']['und'][0]['#required'] = FALSE;
+
+    if (in_array('wholesaler', $user->roles)) {
+      $form['commerce_price']['#access'] = FALSE;
+      $form['field_category']['#access'] = FALSE;
+    }
+  }
 }
 
 
