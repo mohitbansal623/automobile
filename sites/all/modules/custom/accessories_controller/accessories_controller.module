@@ -10,38 +10,41 @@ function accessories_controller_init() {
   if ($path == 'admin/commerce/products' && in_array('wholesaler', $user->roles)) {
   	drupal_goto('my-products');
   }
+}
+
+
+/**
+ * Implements hook_page_build().
+ */
+function accessories_controller_page_build(&$page) {
+  global $user;
+  $current_path = current_path();
+  $path_alias = drupal_lookup_path('alias', $current_path);
+  if (drupal_match_path($path_alias, 'users/*')) {
+    drupal_add_js(drupal_get_path('module', 'accessories_controller') . '/js/parts.js');
+    // Uid of the user
+    $uid = $user->uid;
+    $user_entity = user_load($uid);
+    $field_terms_conditions_status = field_get_items('user', $user_entity, 'field_terms_conditions_statuss');
+    if (!empty($field_terms_conditions_status) && $field_terms_conditions_status[0]['value'] == 0 || empty($field_terms_conditions_status)) {
+      drupal_add_js(array('accessories_controller' => array('show_popup' => '1')), 'setting');
+    }
   }
+}
 
-  function accessories_controller_user_login(&$edit, $account) {
-  	dpm($account);
-
-  	if (isset($account->field_terms_conditions_statuss['und'][0]['value']) && $account->field_terms_conditions_statuss['und'][0]['value'] == 0) {
-         dpm("mohit");
-         dpm(drupal_get_path('module', 'accessories_controller'));
-         dpm(drupal_get_path('module', 'accessories_controller') . '/js/parts.js');
-          drupal_add_js(drupal_get_path('module', 'accessories_controller') . '/js/parts.js');
-          drupal_add_js(array('show_popup' => array('flag' => 1)), array('type' => 'setting'));
-          dpm("bansal");
-  	}
-
-
-  }
-
-  /**
+/**
  * Implements hook_menu().
  */
 function accessories_controller_menu() {
   $items = array();
 
-  $items['accept'] = array(
+  $items['accept-terms-conditions'] = array(
     'title' => 'Set 1 status to Term and conditions',
     'description' => 'Set 1 status to Term and conditions',
     'page callback' => 'accept_terms_and_conditions',
     'access callback' => TRUE,
   );
-
-
-return $items;
+  return $items;
 }
 
 
@@ -50,6 +53,7 @@ function accept_terms_and_conditions() {
 	$user_info = user_load($user->uid);
 	$user_info->field_terms_conditions_statuss['und'][0]['value'] = 1;
 	user_save($user_info);
+  print('user-accepted');
 }
 
 

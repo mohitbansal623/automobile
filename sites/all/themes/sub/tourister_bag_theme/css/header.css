@@ -106,25 +106,27 @@ header#navbar.navbar.container .navbar-collapse ul.navbar-nav a::after {
   position: absolute;
   bottom: 0;
 }
-/* line 72, ../sass/header.scss */
-header#navbar.navbar.container .navbar-collapse ul.navbar-nav a.active::after {
-  width: 60%;
-}
-/* line 77, ../sass/header.scss */
-header#navbar.navbar.container .navbar-collapse ul.navbar-nav a:hover::after {
-  width: 60%;
+@media screen and (min-width: 768px) {
+  /* line 73, ../sass/header.scss */
+  header#navbar.navbar.container .navbar-collapse ul.navbar-nav a.active::after {
+    width: 60%;
+  }
+  /* line 78, ../sass/header.scss */
+  header#navbar.navbar.container .navbar-collapse ul.navbar-nav a:hover::after {
+    width: 60%;
+  }
 }
 @media screen and (min-width: 768px) {
-  /* line 86, ../sass/header.scss */
+  /* line 88, ../sass/header.scss */
   header#navbar.navbar.container .navbar-collapse ul.dropdown-menu a {
     color: #111;
   }
 }
-/* line 91, ../sass/header.scss */
+/* line 93, ../sass/header.scss */
 header#navbar.navbar.container .navbar-collapse ul.dropdown-menu.active {
   color: #fff;
 }
-/* line 94, ../sass/header.scss */
+/* line 96, ../sass/header.scss */
 header#navbar.navbar.container .navbar-collapse ul.dropdown-menu:hover {
   color: #fff;
 }
