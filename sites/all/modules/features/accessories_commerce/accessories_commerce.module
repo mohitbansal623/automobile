@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the Accessories Commerce feature.
+ */
+
+include_once 'accessories_commerce.features.inc';
