@@ -74,6 +74,7 @@
 }
 
 
+/********************* AutoMobiles  ******************/
 body.front {
   .main-container {
     // background-color: #0a364a;
@@ -100,6 +101,7 @@ body.front {
       margin-bottom: 40px;
       select {
         width: 200px;
+        background-color: #d8dcde;
       }
       .views-exposed-form .views-exposed-widget .btn {
         margin-top: 1.4em;
@@ -156,6 +158,8 @@ body.front {
     }
   }
 }
+
+/*********** Automobiles *******************/
 
 body.page-cart {
   .commerce-line-item-actions {

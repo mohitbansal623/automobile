@@ -69,15 +69,17 @@ header#navbar.navbar.container {
           position: absolute;
           bottom: 0;
         }
-        &.active::after {
+        @media screen and (min-width: 768px) {
+          &.active::after {
           // color: #f38c58;
           width: 60%;
 
-        }
-        &:hover::after {
-          // color: #f38c58;
-          // text-decoration: underline;
-          width: 60%;
+          }
+          &:hover::after {
+            // color: #f38c58;
+            // text-decoration: underline;
+            width: 60%;
+          }
         }
       }
     }

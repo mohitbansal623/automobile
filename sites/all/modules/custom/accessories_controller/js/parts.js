@@ -1,9 +1,6 @@
 (function($) {
-Drupal.behaviors.show_popup = {
-attach: function (context, settings) {
-
-console.log("attach");
-console.log(Drupal.settings.show_popup);
-
-}
-};})(jQuery);
+  Drupal.behaviors.regsiter_ngo = {
+    attach: function (context, settings) {
+    }
+  }
+})(jQuery);
