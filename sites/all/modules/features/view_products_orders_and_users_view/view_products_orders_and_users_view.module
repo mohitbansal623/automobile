@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the View Products,Orders and Users View feature.
+ */
+
+include_once 'view_products_orders_and_users_view.features.inc';
